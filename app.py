@@ -46,10 +46,10 @@ url1="https://victormwachi.github.io/"
 def main():
     
     # Convert HTML to PDF
-    convert = HtmlPdfConverter("https://chatgpt.com/share/675ecaac-aad0-800b-828a-7ab7d341da93")
-    return convert.convert()
+    #convert = HtmlPdfConverter("https://chatgpt.com/share/675ecaac-aad0-800b-828a-7ab7d341da93")
+    #return convert.convert()
     #return send_file(pdf_file, as_attachment=True, download_name='output.pdf')
-     #render_template("test.html")
+    return render_template("test.html")
 
 if __name__ =="__main__":
     app.run(debug=True)

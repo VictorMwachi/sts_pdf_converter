@@ -1,0 +1,24 @@
+#add_html{
+    margin: auto;
+    border: solid red 2px;
+}
+#cancel-icon{
+    margin-right: 0px;
+}
+.modal-body{
+    border-bottom: solid 1px;
+}
+.modal-header,.modal-body,.modal-footer{
+    padding: 20px;    
+}
+.inner-body,.inner-content{
+    padding: inherit;
+}
+.menu{
+    border: 1px solid;
+    border-bottom: none;
+}
+
+.header-title{
+    margin: auto;
+}
