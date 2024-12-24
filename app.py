@@ -36,18 +36,18 @@ class HtmlPdfConverter:
         output_file_path = os.path.join(output_folder, file_name)
 
         # Render HTML to PDF
-        HTML(string=res.text).write_pdf(output_file_path)
+        HTML(string=res.content).write_pdf(output_file_path)
 
         return output_file_path
         
 
-url1="https://victormwachi.github.io/"   
+url="https://victormwachi.github.io/"   
 @app.route("/")
 def main():
     
     # Convert HTML to PDF
-    #convert = HtmlPdfConverter("https://chatgpt.com/share/675ecaac-aad0-800b-828a-7ab7d341da93")
-    #return convert.convert()
+    convert = HtmlPdfConverter("https://snippet.africa/")
+    convert.convert()
     #return send_file(pdf_file, as_attachment=True, download_name='output.pdf')
     return render_template("test.html")
 
