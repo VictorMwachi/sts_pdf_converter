@@ -2,7 +2,9 @@
 FROM python:3.12
 
 # Install wkhtmltopdf
-RUN apt-get update && apt-get install -y wkhtmltopdf
+
+RUN wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.focal_amd64.deb
+RUN apt install ./wkhtmltox_0.12.6-1.focal_amd64.deb
 
 # Set working directory
 WORKDIR /app
